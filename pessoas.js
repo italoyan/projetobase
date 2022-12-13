@@ -25,3 +25,10 @@ function listar() {
 }
 
 listar();
+
+function listar_por_genero(genero) {
+    const pessoasFilter = pessoas.filter(pessoa => pessoa.genero === genero);
+    console.log(pessoasFilter);
+}
+listar_por_genero('F')
+listar_por_genero('M')
